@@ -5,28 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-    prism:ViewModelLocator.AutowireViewModel="True">
-    <StackLayout>
-
-
-        <Label>Nome:</Label>
-        <Entry Text="{Binding Nome}" />
-
-    </StackLayout>
-    <StackLayout>
-
-
-        <Label>Idate:</Label>
-        <Entry Text="{Binding Idade}" />
-
-    </StackLayout>
-    <StackLayout />
-
-
-
-
-
-
+    prism:ViewModelLocator.AutowireViewModel="True"
+    BackgroundImage="whoareyou.png">
     <ScrollView>
 
         <!--  MAIN CONTAINER  -->
@@ -42,25 +22,7 @@
                 <RowDefinition Height="100" />
             </Grid.RowDefinitions>
 
-            <!--  LOGO  -->
-            <!--
-      <commonViews:BrandBlock
-				Grid.Row="0"/>
 
-            -->
-            <!--  CLOSE ICON  -->
-            <!--
-      <Label
-				Style="{DynamicResource IconCloseLabelStyle}"
-				HorizontalOptions="End"
-				VerticalOptions="Start"
-				TranslationX="-20"
-				TranslationY="20"
-				Grid.Row="0">
-        <Label.GestureRecognizers>
-          <TapGestureRecognizer Tapped="OnCloseButtonClicked" />
-        </Label.GestureRecognizers>
-      </Label>-->
 
             <!--  -FIELDS CONTAINER  -->
             <Grid
@@ -76,10 +38,7 @@
                 </Grid.RowDefinitions>
                 <StackLayout Grid.Row="0" VerticalOptions="Start">
                     <!--  -EMAIL FIELD  -->
-                    <Entry
-                        Placeholder="Nome"
-                        Style="{DynamicResource ArtinaLoginEntryStyle}"
-                        Text="{Binding Nome}" />
+                    <Entry Placeholder="Nome" Text="{Binding Nome}" />
 
 
                 </StackLayout>
@@ -88,48 +47,13 @@
                 <Entry
                     Grid.Row="1"
                     Placeholder="Idade"
-                    Style="{DynamicResource ArtinaLoginEntryStyle}"
                     Text="{Binding Idade}"
                     VerticalOptions="StartAndExpand" />
 
 
-                <!--  -PASSWORD FIELD  -->
-                <!--
-        <Entry x:Name="passwordEntry"
-          Grid.Row="2"
-          Placeholder="Password"
-          IsPassword="true"
-          Style="{DynamicResource ArtinaLoginEntryStyle}"
-          VerticalOptions="StartAndExpand" />-->
 
-                <StackLayout Grid.Row="3" VerticalOptions="StartAndExpand">
 
-                    <!--  -PASSWORD REPEAT FIELD  -->
-                    <Entry
-                        IsPassword="true"
-                        Placeholder="Repeat Password"
-                        Style="{DynamicResource ArtinaLoginEntryStyle}">
-                        <Entry.Behaviors>
-                            <artina:TextMatchValidatorBehavior x:Name="passwordValidator" TextToMatch="{Binding Source={x:Reference passwordEntry}, Path=Text}" />
-                        </Entry.Behaviors>
-                    </Entry>
 
-                    <Label
-                        IsVisible="false"
-                        Style="{DynamicResource ValidationEntryErrorStyle}"
-                        Text=" Passwords do not match ">
-
-                        <Label.Triggers>
-                            <DataTrigger
-                                Binding="{Binding Source={x:Reference passwordValidator}, Path=IsValid}"
-                                TargetType="Label"
-                                Value="false">
-                                <Setter Property="IsVisible" Value="true" />
-                            </DataTrigger>
-                        </Label.Triggers>
-
-                    </Label>
-                </StackLayout>
             </Grid>
 
             <!--  FOOTER  -->
@@ -142,7 +66,6 @@
 
                 <artina:Button
                     Command="{Binding Proximo}"
-                    Style="{DynamicResource PrimaryActionButtonStyle}"
                     Text="Proximo"
                     VerticalOptions="End" />
 

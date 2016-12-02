@@ -1,9 +1,10 @@
 ﻿using System;
 using System.IO;
 using SQLite;
-
+[assembly: Xamarin.Forms.Dependency(typeof(DevChampsAPP.Droid.SQLiteConnection_Droid))]
 namespace DevChampsAPP.Droid
 {
+    
     public class SQLiteConnection_Droid : ISQLiteConnection
     {
         public SQLiteConnection_Droid()

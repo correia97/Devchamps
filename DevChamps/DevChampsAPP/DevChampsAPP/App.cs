@@ -21,6 +21,8 @@ namespace DevChampsAPP
 
             Container.RegisterType(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             Container.RegisterType(typeof(IBaseApplicationService<>), typeof(BaseApplicationService<>));
+
+            
         }
     }
 }

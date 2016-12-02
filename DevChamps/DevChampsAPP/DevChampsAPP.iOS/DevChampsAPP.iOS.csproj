@@ -191,8 +191,9 @@
       <HintPath>..\..\packages\SQLiteNetExtensions.2.0.0-alpha2\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\SQLiteNetExtensions.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="DependenceyServices\" />
+    <BundleResource Include="Resources\whoareyou.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.168\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.168\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

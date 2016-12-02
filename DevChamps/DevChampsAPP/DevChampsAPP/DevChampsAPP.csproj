@@ -70,7 +70,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ViewModels\QuemVoceViewModel.cs" />
+    <Compile Include="ViewModels\QuemVocePageViewModel.cs" />
     <Compile Include="ViewModels\ResultadoViewModel.cs" />
     <EmbeddedResource Include="Views\DashboardPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
