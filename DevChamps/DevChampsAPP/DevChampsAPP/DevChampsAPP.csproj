@@ -36,7 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\DashboardViewModel.cs" />
+    <Compile Include="ViewModels\DashboardPageViewModel.cs" />
     <Compile Include="ViewModels\DespesasViewModel.cs" />
     <Compile Include="Data\Configuration\DataConfiguration.cs" />
     <Compile Include="DependencyServices\ISQLiteConnection.cs" />

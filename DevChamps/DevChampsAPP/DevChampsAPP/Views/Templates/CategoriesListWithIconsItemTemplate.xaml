@@ -2,12 +2,11 @@
 <ContentView x:Class="DevChampsAPP.Views.Templates.CategoriesListWithIconsItemTemplate"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:DevChampsAPP;assembly=DevChampsAPP"
              BackgroundColor="Black">
 
 	<StackLayout HorizontalOptions="FillAndExpand"
 	             VerticalOptions="FillAndExpand"
-	             BackgroundColor="White"
+	             BackgroundColor="{Binding BackgroundColor}"
 	             Orientation="Horizontal"
 	             Spacing="20">
 
@@ -16,17 +15,15 @@
 		      VerticalOptions="FillAndExpand"
 		      BackgroundColor="#33000000">
 
-			<Label HorizontalOptions="Center"
+			<Image HorizontalOptions="Center"
 			       VerticalOptions="Center"
-			       FontSize="40"
 			       Opacity=".2"
-			       Style="{x:Static local:AppConstants.FontIcon}"
-			       Text="{Binding Ico}"
-			       TextColor="White" />
+			       Source="{Binding Ico}"
+			       Style="{StaticResource FontIcon}" />
 		</Grid>
 
 		<StackLayout VerticalOptions="Center" Spacing="2">
-			<Label Text="{Binding Nome}" TextColor="White" />
+			<Label Text="{Binding Name}" TextColor="White" />
 		</StackLayout>
 
 	</StackLayout>

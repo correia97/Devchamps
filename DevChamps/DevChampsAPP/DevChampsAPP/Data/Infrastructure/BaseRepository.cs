@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using SQLiteNetExtensions.Extensions;
+using System.Linq;
 
 namespace DevChampsAPP
 {
@@ -27,6 +28,10 @@ namespace DevChampsAPP
                     App.dbConn.CreateTable<Investimento>(SQLite.CreateFlags.None);
                     App.dbConn.CreateTable<Pessoa>(SQLite.CreateFlags.None);
                     App.dbConn.CreateTable<Resultado>(SQLite.CreateFlags.None);
+                    App.dbConn.CreateTable<Menu>(SQLite.CreateFlags.None);
+
+                    if (App.dbConn.Table<Menu>().Table != null && !App.dbConn.Table<Menu>().Any())
+                        ConfiguraMenu();
                 }
                 catch (Exception ex)
                 {
@@ -137,42 +142,55 @@ namespace DevChampsAPP
             var menu1 = new Menu
             {
                 Ico = "conjuge.png",
-                Descricao = "Conjuge"
+                Descricao = "Conjuge",
+                Ordem = 0,
+                BackgroundColor = Xamarin.Forms.Color.FromHex("#3360ff")
             };
             listaMenus.Add(menu1);
 
             var menu2 = new Menu
             {
                 Ico = "dependentes.png",
-                Descricao = "Depentendes"
+                Descricao = "Depentendes",
+                Ordem = 1,
+                BackgroundColor = Xamarin.Forms.Color.FromHex("#5c79ff")
             };
             listaMenus.Add(menu2);
 
             var menu3 = new Menu
             {
                 Ico = "aposentadoria.png",
-                Descricao = "Aposentadoria"
+                Descricao = "Aposentadoria",
+                Ordem = 2,
+                BackgroundColor = Xamarin.Forms.Color.FromHex("#9ec9ff")
             };
             listaMenus.Add(menu3);
 
             var menu4 = new Menu
             {
                 Ico = "despesas.png",
-                Descricao = "Despesas"
+                Descricao = "Despesas",
+                Ordem = 3,
+                BackgroundColor = Xamarin.Forms.Color.FromHex("#ccdeff")
             };
             listaMenus.Add(menu4);
 
             var menu5 = new Menu
             {
                 Ico = "perfilinvestidor.png",
-                Descricao = "Perfil Investidor"
+                Descricao = "Perfil Investidor",
+                Ordem = 4,
+                BackgroundColor = Xamarin.Forms.Color.FromHex("#f8fbff")
             };
             listaMenus.Add(menu5);
 
             var menu6 = new Menu
             {
                 Ico = "reservas.png",
-                Descricao = "Reservas"
+                Descricao = "Reservas",
+                Ordem = 5,
+                BackgroundColor = Xamarin.Forms.Color.FromHex("#3360ff")
+
             };
             listaMenus.Add(menu6);
 

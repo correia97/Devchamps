@@ -9,11 +9,9 @@ namespace DevChampsAPP
     {
         public static SQLite.SQLiteConnection dbConn { get; set; }
 
-        public App(IPlatformInitializer initializer = null) : base(initializer) { }
-
         protected override void OnInitialized()
         {
-            NavigationService.NavigateAsync("MainPage?title=Hello%20from%20Xamarin.Forms");
+            NavigationService.NavigateAsync("DashboardPage");
         }
 
         protected override void RegisterTypes()
