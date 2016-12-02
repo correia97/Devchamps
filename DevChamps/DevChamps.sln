@@ -105,6 +105,7 @@ Global
 		{EE7AE894-3F7C-4FB1-B6E8-941BB8C44BC1}.Release|iPhone.Build.0 = Release|iPhone
 		{EE7AE894-3F7C-4FB1-B6E8-941BB8C44BC1}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{EE7AE894-3F7C-4FB1-B6E8-941BB8C44BC1}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{EE7AE894-3F7C-4FB1-B6E8-941BB8C44BC1}.Debug|Any CPU.Build.0 = Debug|iPhone
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
