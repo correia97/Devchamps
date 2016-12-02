@@ -11,7 +11,7 @@ namespace DevChampsAPP
 
         protected override void OnInitialized()
         {
-            NavigationService.NavigateAsync("NavPage/QuemVocePage");
+            NavigationService.NavigateAsync("QuemVocePage");
         }
 
         protected override void RegisterTypes()
