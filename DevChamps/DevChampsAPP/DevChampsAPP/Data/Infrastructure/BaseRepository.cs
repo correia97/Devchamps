@@ -30,7 +30,7 @@ namespace DevChampsAPP
                     App.dbConn.CreateTable<Resultado>(SQLite.CreateFlags.None);
                     App.dbConn.CreateTable<Menu>(SQLite.CreateFlags.None);
 
-                    if (App.dbConn.Table<Menu>().Table != null && !App.dbConn.Table<Menu>().Any())
+                    if ( typeof(T) == typeof(Menu) && App.dbConn.Table<Menu>().Table != null && !App.dbConn.Table<Menu>().Any())
                         ConfiguraMenu();
                 }
                 catch (Exception ex)
