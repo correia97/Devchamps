@@ -178,6 +178,7 @@
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
     <AndroidResource Include="Resources\drawable\whoareyou.png" />
+    <AndroidResource Include="Resources\drawable\resultadobg.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DevChampsAPP\DevChampsAPP.csproj">

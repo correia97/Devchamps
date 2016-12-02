@@ -39,7 +39,7 @@
     <Compile Include="ViewModels\DashboardPageViewModel.cs" />
     <Compile Include="ViewModels\DespesasViewModel.cs" />
     <Compile Include="Data\Configuration\DataConfiguration.cs" />
-    <Compile Include="DependencyServices\ISQLiteConnection.cs" />
+    <Compile Include="Styles\ISQLiteConnection.cs" />
     <Compile Include="Data\Infrastructure\IBaseRepository.cs" />
     <Compile Include="Data\Infrastructure\BaseRepository.cs" />
     <Compile Include="ApplicationServices\IBaseApplicationService.cs" />
@@ -47,6 +47,7 @@
     <Compile Include="Models\Despesa.cs" />
     <Compile Include="Models\Investimento.cs" />
     <Compile Include="Models\Resultado.cs" />
+    <Compile Include="ViewModels\ResultadoPageViewModel.cs" />
     <Compile Include="Views\DashboardPage.xaml.cs">
       <DependentUpon>DashboardPage.xaml</DependentUpon>
     </Compile>
@@ -56,6 +57,9 @@
     <Compile Include="Helpers\EnumerableExtensions.cs" />
     <Compile Include="Views\QuemVocePage.xaml.cs">
       <DependentUpon>QuemVocePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ResultadoPage.xaml.cs">
+      <DependentUpon>ResultadoPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Templates\CategoriesListWithIconsItemTemplate.xaml.cs">
       <DependentUpon>CategoriesListWithIconsItemTemplate.xaml</DependentUpon>
@@ -81,7 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ViewModels\QuemVocePageViewModel.cs" />
-    <Compile Include="ViewModels\ResultadoViewModel.cs" />
     <EmbeddedResource Include="Views\DashboardPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -158,7 +161,15 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ResultadoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DependencyServices\" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.168\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.168\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Import Project="..\..\packages\Fody.1.29.2\build\portable-net+sl+win+wpa+wp\Fody.targets" Condition="Exists('..\..\packages\Fody.1.29.2\build\portable-net+sl+win+wpa+wp\Fody.targets')" />

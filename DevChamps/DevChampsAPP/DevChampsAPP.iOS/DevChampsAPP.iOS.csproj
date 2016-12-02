@@ -193,7 +193,9 @@
       <HintPath>..\..\packages\SQLiteNetExtensions.2.0.0-alpha2\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\SQLiteNetExtensions.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BundleResource Include="Resources\resultadobg.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\whoareyou.png" />
   </ItemGroup>

@@ -2,6 +2,7 @@
 using DevChampsAPP.Views;
 
 using Microsoft.Practices.Unity;
+using Xamarin.Forms.Xaml;
 
 namespace DevChampsAPP
 {
@@ -11,7 +12,7 @@ namespace DevChampsAPP
 
         protected override void OnInitialized()
         {
-            NavigationService.NavigateAsync("QuemVocePage");
+            NavigationService.NavigateAsync("ResultadoPage");
         }
 
         protected override void RegisterTypes()
@@ -21,9 +22,12 @@ namespace DevChampsAPP
             Container.RegisterTypeForNavigation<ConjugePage>();
             Container.RegisterTypeForNavigation<DependentesPage>();
             Container.RegisterTypeForNavigation<NavPage>();
+            Container.RegisterTypeForNavigation<ResultadoPage>();
 
             Container.RegisterType(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             Container.RegisterType(typeof(IBaseApplicationService<>), typeof(BaseApplicationService<>));
+            
+            
         }
     }
 }
