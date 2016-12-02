@@ -44,8 +44,6 @@
     <Compile Include="Data\Infrastructure\BaseRepository.cs" />
     <Compile Include="ApplicationServices\IBaseApplicationService.cs" />
     <Compile Include="ApplicationServices\BaseApplicationService.cs" />
-    <Compile Include="Models\Despesa.cs" />
-    <Compile Include="Models\Investimento.cs" />
     <Compile Include="Models\Resultado.cs" />
     <Compile Include="Views\DashboardPage.xaml.cs">
       <DependentUpon>DashboardPage.xaml</DependentUpon>
@@ -74,6 +72,25 @@
     <Compile Include="Views\DependentesPage.xaml.cs">
       <DependentUpon>DependentesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\AposentadoriaPage.xaml.cs">
+      <DependentUpon>AposentadoriaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DespesasPage.xaml.cs">
+      <DependentUpon>DespesasPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PerfilInvestidorPage.xaml.cs">
+      <DependentUpon>PerfilInvestidorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReservasPage.xaml.cs">
+      <DependentUpon>ReservasPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AposentadoriaPageViewModel.cs" />
+    <Compile Include="ViewModels\DependentesPageViewModel.cs" />
+    <Compile Include="ViewModels\DespesasPageViewModel.cs" />
+    <Compile Include="ViewModels\PerfilInvestidorPageViewModel.cs" />
+    <Compile Include="ViewModels\ReservasPageViewModel.cs" />
+    <Compile Include="Behaviors\EventToCommandBehavior.cs" />
+    <Compile Include="ViewModels\NavPageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs">
@@ -95,6 +112,18 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DependentesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AposentadoriaPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DespesasPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PerfilInvestidorPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReservasPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

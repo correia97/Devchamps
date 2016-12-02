@@ -2,11 +2,12 @@
 
 namespace DevChampsAPP.Views
 {
-    public partial class NavPage : NavigationPage
+    public partial class ReservasPage : ContentPage
     {
-        public NavPage()
+        public ReservasPage()
         {
             InitializeComponent();
         }
     }
 }
+

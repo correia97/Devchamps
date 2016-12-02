@@ -11,9 +11,9 @@
 		<Image x:Name="img"
 		       AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
 		       AbsoluteLayout.LayoutFlags="All"
-		       AnchorY="0"
 		       Aspect="AspectFill"
-		       Opacity=".10"
+		       Opacity=".6"
+		       Scale="1.2"
 		       Source="depentendes.jpg"
 		       TranslationY="-10" />
 
@@ -57,8 +57,7 @@
 						       LineBreakMode="WordWrap"
 						       Text="Arraste para marcar a quantidade de dependentes."
 						       TextColor="White" />
-
-						<Slider Maximum="0" Minimum="5" />
+						<Slider Maximum="99" Minimum="21" Value="{Binding Dependentes}" />
 					</StackLayout>
 				</StackLayout>
 			</StackLayout>

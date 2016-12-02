@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ContentPage x:Class="DevChampsAPP.Views.ConjugePage"
+<ContentPage x:Class="DevChampsAPP.Views.ReservasPage"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             BackgroundColor="Black">
-
+		BackgroundColor="Black">
 	<AbsoluteLayout Padding="0">
 		<!--  MAIN IMAGE  -->
 		<Image x:Name="img"
@@ -13,7 +12,8 @@
 		       AbsoluteLayout.LayoutFlags="All"
 		       Aspect="AspectFill"
 		       Opacity=".6"
-		       Source="couple.jpg" />
+		       Source="reservas.jpg"
+		       TranslationY="-10" />
 
 		<Grid AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
 		      AbsoluteLayout.LayoutFlags="All"
@@ -47,18 +47,15 @@
 						       FontAttributes="Bold"
 						       FontSize="30"
 						       LineBreakMode="WordWrap"
-						       Text="Seu cônjuge ou companheiro é seu dependente?"
+						       Text="Fale um pouco sobre as suas despesas"
 						       TextColor="White" />
 
 						<Label VerticalOptions="End"
 						       FontAttributes="None"
 						       LineBreakMode="WordWrap"
-						       Text="Arraste para marcar a sua idade."
+						       Text="Arraste o í­cone para a direita para aumentar e para a esquerda, diminuir."
 						       TextColor="White" />
-
-						<Slider Maximum="99"
-						        Minimum="21"
-						        Value="{Binding Idade}" />
+						<!--						<Slider Maximum="99" Minimum="5000" />-->
 					</StackLayout>
 				</StackLayout>
 			</StackLayout>

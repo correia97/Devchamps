@@ -7,6 +7,7 @@ namespace DevChampsAPP.Views
         public DashboardPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }

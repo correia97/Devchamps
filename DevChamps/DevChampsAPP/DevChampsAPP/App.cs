@@ -11,7 +11,7 @@ namespace DevChampsAPP
 
         protected override void OnInitialized()
         {
-            NavigationService.NavigateAsync("DependentesPage");
+            NavigationService.NavigateAsync("NavPage/QuemVocePage");
         }
 
         protected override void RegisterTypes()
@@ -19,7 +19,11 @@ namespace DevChampsAPP
             Container.RegisterTypeForNavigation<DashboardPage>();
             Container.RegisterTypeForNavigation<QuemVocePage>();
             Container.RegisterTypeForNavigation<ConjugePage>();
+            Container.RegisterTypeForNavigation<AposentadoriaPage>();
             Container.RegisterTypeForNavigation<DependentesPage>();
+            Container.RegisterTypeForNavigation<DespesasPage>();
+            Container.RegisterTypeForNavigation<PerfilInvestidorPage>();
+            Container.RegisterTypeForNavigation<ReservasPage>();
             Container.RegisterTypeForNavigation<NavPage>();
 
             Container.RegisterType(typeof(IBaseRepository<>), typeof(BaseRepository<>));
