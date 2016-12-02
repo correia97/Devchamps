@@ -1,25 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Prism.Mvvm;
 using Prism.Navigation;
-//using PropertyChanged;
+using PropertyChanged;
 
 namespace DevChampsAPP.ViewModels
 {
-    //[ImplementPropertyChanged]
-    public class DashboardViewModel : INavigationAware
+    [ImplementPropertyChanged]
+    public class DashboardPageViewModel : INavigationAware
     {
-        readonly IBaseApplicationService<Pessoa> _pessoaService;
         readonly IBaseApplicationService<Menu> _menuService;
 
         public IList<Menu> Menus { get; set; }
 
-        public DashboardViewModel(IBaseApplicationService<Pessoa> pessoaService,
-                                  IBaseApplicationService<Menu> menuService)
+        public DashboardPageViewModel(IBaseApplicationService<Menu> menuService)
         {
-            _pessoaService = pessoaService;
             _menuService = menuService;
         }
 

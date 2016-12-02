@@ -9,8 +9,6 @@ namespace DevChampsAPP
     {
         public static SQLite.SQLiteConnection dbConn { get; set; }
 
-        public App(IPlatformInitializer initializer = null) : base(initializer) { }
-
         protected override void OnInitialized()
         {
             NavigationService.NavigateAsync("QuemVocePage");

@@ -1,37 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ContentView
-    x:Class="DevChampsAPP.Views.Templates.CategoriesListWithIconsItemTemplate"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:DevChampsAPP;assembly=DevChampsAPP"
-    BackgroundColor="Black">
+<ContentView x:Class="DevChampsAPP.Views.Templates.CategoriesListWithIconsItemTemplate"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="Black">
 
-    <StackLayout
-        BackgroundColor="White"
-        HorizontalOptions="FillAndExpand"
-        Orientation="Horizontal"
-        Spacing="20"
-        VerticalOptions="FillAndExpand">
+	<StackLayout HorizontalOptions="FillAndExpand"
+	             VerticalOptions="FillAndExpand"
+	             BackgroundColor="{Binding BackgroundColor}"
+	             Orientation="Horizontal"
+	             Spacing="20">
 
-        <Grid
-            BackgroundColor="#33000000"
-            HorizontalOptions="Start"
-            VerticalOptions="FillAndExpand"
-            WidthRequest="80">
+		<Grid WidthRequest="80"
+		      HorizontalOptions="Start"
+		      VerticalOptions="FillAndExpand"
+		      BackgroundColor="#33000000">
 
-            <Label
-                FontSize="40"
-                HorizontalOptions="Center"
-                Opacity=".2"
-                Style="{x:Static local:AppConstants.FontIcon}"
-                Text="{Binding Ico}"
-                TextColor="White"
-                VerticalOptions="Center" />
-        </Grid>
+			<Image HorizontalOptions="Center"
+			       VerticalOptions="Center"
+			       Opacity=".2"
+			       Source="{Binding Ico}"
+			       Style="{StaticResource FontIcon}" />
+		</Grid>
 
-        <StackLayout Spacing="2" VerticalOptions="Center">
-            <Label Text="{Binding Nome}" TextColor="White" />
-        </StackLayout>
+		<StackLayout VerticalOptions="Center" Spacing="2">
+			<Label Text="{Binding Name}" TextColor="White" />
+		</StackLayout>
 
-    </StackLayout>
+	</StackLayout>
 </ContentView>
