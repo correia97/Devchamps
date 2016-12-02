@@ -13,12 +13,13 @@ namespace DevChampsAPP
 
         protected override void OnInitialized()
         {
-            NavigationService.NavigateAsync("MainPage?title=Hello%20from%20Xamarin.Forms");
+            NavigationService.NavigateAsync("QuemVocePage");
         }
 
         protected override void RegisterTypes()
         {
             Container.RegisterTypeForNavigation<DashboardPage>();
+            Container.RegisterTypeForNavigation<QuemVocePage>();
 
             Container.RegisterType(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             Container.RegisterType(typeof(IBaseApplicationService<>), typeof(BaseApplicationService<>));

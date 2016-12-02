@@ -54,6 +54,9 @@
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\EntidadeBase.cs" />
     <Compile Include="Helpers\EnumerableExtensions.cs" />
+    <Compile Include="Views\QuemVocePage.xaml.cs">
+      <DependentUpon>QuemVocePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Templates\CategoriesListWithIconsItemTemplate.xaml.cs">
       <DependentUpon>CategoriesListWithIconsItemTemplate.xaml</DependentUpon>
     </Compile>
@@ -130,14 +133,13 @@
     <None Include="packages.config" />
     <None Include="FodyWeavers.xml" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Helpers\" />
-    <Folder Include="Views\Templates\" />
-    <Folder Include="Styles\" />
-    <Folder Include="Behaviors\" />
-    <Folder Include="Converters\" />
+    <EmbeddedResource Include="Views\QuemVocePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.168\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.168\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Import Project="..\..\packages\Fody.1.29.2\build\portable-net+sl+win+wpa+wp\Fody.targets" Condition="Exists('..\..\packages\Fody.1.29.2\build\portable-net+sl+win+wpa+wp\Fody.targets')" />
