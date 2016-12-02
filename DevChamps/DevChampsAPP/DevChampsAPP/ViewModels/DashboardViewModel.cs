@@ -4,11 +4,11 @@ using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Prism.Mvvm;
 using Prism.Navigation;
-using PropertyChanged;
+//using PropertyChanged;
 
 namespace DevChampsAPP.ViewModels
 {
-    [ImplementPropertyChanged]
+    //[ImplementPropertyChanged]
     public class DashboardViewModel : INavigationAware
     {
         readonly IBaseApplicationService<Pessoa> _pessoaService;

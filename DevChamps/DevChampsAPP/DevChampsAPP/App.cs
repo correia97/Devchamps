@@ -18,7 +18,6 @@ namespace DevChampsAPP
 
         protected override void RegisterTypes()
         {
-            Container.RegisterTypeForNavigation<MainPage>();
             Container.RegisterTypeForNavigation<DashboardPage>();
 
             Container.RegisterType(typeof(IBaseRepository<>), typeof(BaseRepository<>));

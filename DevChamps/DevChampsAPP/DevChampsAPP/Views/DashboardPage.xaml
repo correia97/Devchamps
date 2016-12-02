@@ -10,7 +10,6 @@
 		ItemsSource="{Binding Menus}"
 		SeparatorVisibility="None"
 		SeparatorColor="#DFDFDF"
-		ItemTapped="OnItemTapped"
 		HasUnevenRows="false"
 		RowHeight="60">
 	
