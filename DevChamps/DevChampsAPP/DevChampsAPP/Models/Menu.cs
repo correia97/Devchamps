@@ -7,6 +7,6 @@ namespace DevChampsAPP
         public string Descricao { get; set; }
         public int Ordem { get; set; }
 
-        public Xamarin.Forms.Color BackgroundColor { get; set; }
+        public string BackgroundColor { get; set; }
     }
 }

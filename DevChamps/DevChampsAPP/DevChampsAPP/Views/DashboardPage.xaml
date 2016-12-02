@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ContentPage
-    x:Class="DevChampsAPP.Views.DashboardPage"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-    xmlns:templates="clr-namespace:DevChampsAPP.Views.Templates;assembly=DevChampsAPP"
-    Title="Simulação"
-    prism:ViewModelLocator.AutowireViewModel="True">
-    <ListView
-        HasUnevenRows="false"
-        ItemsSource="{Binding Menus}"
-        RowHeight="80"
-        SeparatorColor="Transparent"
-        SeparatorVisibility="None">
+<ContentPage x:Class="DevChampsAPP.Views.DashboardPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:templates="clr-namespace:DevChampsAPP.Views.Templates;assembly=DevChampsAPP"
+             Title="Simulação"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             Padding="0,20,0,0">
+	<ListView BackgroundColor="#4d75a6"
+	          HasUnevenRows="false"
+	          ItemsSource="{Binding Menus}"
+	          RowHeight="80"
+	          SeparatorColor="Transparent"
+	          SeparatorVisibility="None">
 
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <templates:CategoriesListWithIconsItemTemplate />
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
+		<ListView.ItemTemplate>
+			<DataTemplate>
+				<ViewCell>
+					<templates:CategoriesListWithIconsItemTemplate />
+				</ViewCell>
+			</DataTemplate>
+		</ListView.ItemTemplate>
 
-    </ListView>
+	</ListView>
 
 </ContentPage>

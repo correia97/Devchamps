@@ -15,15 +15,15 @@
 		      VerticalOptions="FillAndExpand"
 		      BackgroundColor="#33000000">
 
-			<Image HorizontalOptions="Center"
+			<Image WidthRequest="64"
+			       HeightRequest="64"
+			       HorizontalOptions="Center"
 			       VerticalOptions="Center"
-			       Opacity=".2"
-			       Source="{Binding Ico}"
-			       Style="{StaticResource FontIcon}" />
+			       Source="{Binding Ico}" />
 		</Grid>
 
 		<StackLayout VerticalOptions="Center" Spacing="2">
-			<Label Text="{Binding Name}" TextColor="White" />
+			<Label Text="{Binding Descricao}" TextColor="White" />
 		</StackLayout>
 
 	</StackLayout>

@@ -142,9 +142,9 @@ namespace DevChampsAPP
             var menu1 = new Menu
             {
                 Ico = "conjuge.png",
-                Descricao = "Conjuge",
+                Descricao = "Cônjuge",
                 Ordem = 0,
-                BackgroundColor = Xamarin.Forms.Color.FromHex("#3360ff")
+                BackgroundColor = "#c11e5d"
             };
             listaMenus.Add(menu1);
 
@@ -153,7 +153,7 @@ namespace DevChampsAPP
                 Ico = "dependentes.png",
                 Descricao = "Depentendes",
                 Ordem = 1,
-                BackgroundColor = Xamarin.Forms.Color.FromHex("#5c79ff")
+                BackgroundColor = "#ab1958"
             };
             listaMenus.Add(menu2);
 
@@ -162,7 +162,7 @@ namespace DevChampsAPP
                 Ico = "aposentadoria.png",
                 Descricao = "Aposentadoria",
                 Ordem = 2,
-                BackgroundColor = Xamarin.Forms.Color.FromHex("#9ec9ff")
+                BackgroundColor = "#86124f"
             };
             listaMenus.Add(menu3);
 
@@ -171,7 +171,7 @@ namespace DevChampsAPP
                 Ico = "despesas.png",
                 Descricao = "Despesas",
                 Ordem = 3,
-                BackgroundColor = Xamarin.Forms.Color.FromHex("#ccdeff")
+                BackgroundColor = "#483958"
             };
             listaMenus.Add(menu4);
 
@@ -180,7 +180,7 @@ namespace DevChampsAPP
                 Ico = "perfilinvestidor.png",
                 Descricao = "Perfil Investidor",
                 Ordem = 4,
-                BackgroundColor = Xamarin.Forms.Color.FromHex("#f8fbff")
+                BackgroundColor = "#554665"
             };
             listaMenus.Add(menu5);
 
@@ -189,7 +189,7 @@ namespace DevChampsAPP
                 Ico = "reservas.png",
                 Descricao = "Reservas",
                 Ordem = 5,
-                BackgroundColor = Xamarin.Forms.Color.FromHex("#3360ff")
+                BackgroundColor = "#5b5487"
 
             };
             listaMenus.Add(menu6);

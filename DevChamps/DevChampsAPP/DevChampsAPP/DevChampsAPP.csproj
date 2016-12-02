@@ -64,6 +64,16 @@
     <Compile Include="Behaviors\BehaviorBase.cs" />
     <Compile Include="Converters\ItemTappedEventArgsToItemTappedConverter.cs" />
     <Compile Include="Converters\SelectedItemEventArgsToSelectedItemConverter.cs" />
+    <Compile Include="Views\ConjugePage.xaml.cs">
+      <DependentUpon>ConjugePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ConjugePageViewModel.cs" />
+    <Compile Include="Views\NavPage.xaml.cs">
+      <DependentUpon>NavPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DependentesPage.xaml.cs">
+      <DependentUpon>DependentesPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs">
@@ -76,6 +86,15 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Templates\CategoriesListWithIconsItemTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ConjugePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NavPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DependentesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
