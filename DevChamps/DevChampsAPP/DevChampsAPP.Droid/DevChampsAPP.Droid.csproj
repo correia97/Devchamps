@@ -161,6 +161,7 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <InterfaceDefinition Include="Resources\drawable\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />
@@ -177,8 +178,35 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
-    <AndroidResource Include="Resources\drawable\whoareyou.png" />
-    <AndroidResource Include="Resources\drawable\resultadobg.jpg" />
+    <BundleResource Include="Resources\drawable\whoareyou.png" />
+    <BundleResource Include="Resources\drawable\resultadobg.jpg" />
+    <BundleResource Include="Resources\drawable\aposentadoria.jpg" />
+    <BundleResource Include="Resources\drawable\aposentadoria.png" />
+    <BundleResource Include="Resources\drawable\conjuge.png" />
+    <BundleResource Include="Resources\drawable\couple.jpg" />
+    <BundleResource Include="Resources\drawable\Default-568h%402x.png" />
+    <BundleResource Include="Resources\drawable\Default-Portrait.png" />
+    <BundleResource Include="Resources\drawable\Default-Portrait%402x.png" />
+    <BundleResource Include="Resources\drawable\Default.png" />
+    <BundleResource Include="Resources\drawable\Default%402x.png" />
+    <BundleResource Include="Resources\drawable\dependentes.png" />
+    <BundleResource Include="Resources\drawable\depentendes.jpg" />
+    <BundleResource Include="Resources\drawable\despesas.jpg" />
+    <BundleResource Include="Resources\drawable\despesas.png" />
+    <BundleResource Include="Resources\drawable\Icon-60%402x.png" />
+    <BundleResource Include="Resources\drawable\Icon-60%403x.png" />
+    <BundleResource Include="Resources\drawable\Icon-76.png" />
+    <BundleResource Include="Resources\drawable\Icon-76%402x.png" />
+    <BundleResource Include="Resources\drawable\Icon-Small-40.png" />
+    <BundleResource Include="Resources\drawable\Icon-Small-40%402x.png" />
+    <BundleResource Include="Resources\drawable\Icon-Small-40%403x.png" />
+    <BundleResource Include="Resources\drawable\Icon-Small.png" />
+    <BundleResource Include="Resources\drawable\Icon-Small%402x.png" />
+    <BundleResource Include="Resources\drawable\Icon-Small%403x.png" />
+    <BundleResource Include="Resources\drawable\perfilinvestidor.jpg" />
+    <BundleResource Include="Resources\drawable\perfilinvestidor.png" />
+    <BundleResource Include="Resources\drawable\reservas.jpg" />
+    <BundleResource Include="Resources\drawable\reservas.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DevChampsAPP\DevChampsAPP.csproj">
