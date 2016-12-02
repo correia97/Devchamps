@@ -2,11 +2,19 @@
 <ContentPage x:Class="DevChampsAPP.Views.DashboardPage"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DevChampsAPP;assembly=DevChampsAPP"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              xmlns:templates="clr-namespace:DevChampsAPP.Views.Templates;assembly=DevChampsAPP"
              Title="Simulação"
              prism:ViewModelLocator.AutowireViewModel="True"
              Padding="0,20,0,0">
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<local:ItemTappedEventArgsToItemTappedConverter x:Key="ItemTappedConverter" />
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
 	<ListView BackgroundColor="#4d75a6"
 	          HasUnevenRows="false"
 	          ItemsSource="{Binding Menus}"
@@ -21,6 +29,12 @@
 				</ViewCell>
 			</DataTemplate>
 		</ListView.ItemTemplate>
+
+		<ListView.Behaviors>
+			<local:EventToCommandBehavior Command="{Binding ItemTappedCommand}"
+			                              Converter="{StaticResource ItemTappedConverter}"
+			                              EventName="ItemTapped" />
+		</ListView.Behaviors>
 
 	</ListView>
 

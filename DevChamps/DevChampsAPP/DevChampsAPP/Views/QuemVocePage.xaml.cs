@@ -7,6 +7,7 @@ namespace DevChampsAPP.Views
         public QuemVocePage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }

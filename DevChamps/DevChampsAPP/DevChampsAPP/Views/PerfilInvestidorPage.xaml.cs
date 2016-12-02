@@ -2,11 +2,12 @@
 
 namespace DevChampsAPP.Views
 {
-    public partial class NavPage : NavigationPage
+    public partial class PerfilInvestidorPage : ContentPage
     {
-        public NavPage()
+        public PerfilInvestidorPage()
         {
             InitializeComponent();
         }
     }
 }
+

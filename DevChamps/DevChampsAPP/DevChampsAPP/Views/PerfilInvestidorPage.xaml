@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ContentPage x:Class="DevChampsAPP.Views.ConjugePage"
+<ContentPage x:Class="DevChampsAPP.Views.PerfilInvestidorPage"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
@@ -11,9 +11,11 @@
 		<Image x:Name="img"
 		       AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
 		       AbsoluteLayout.LayoutFlags="All"
+		       AnchorY="0"
 		       Aspect="AspectFill"
 		       Opacity=".6"
-		       Source="couple.jpg" />
+		       Source="perfilinvestidor.jpg"
+		       TranslationY="-10" />
 
 		<Grid AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
 		      AbsoluteLayout.LayoutFlags="All"
@@ -47,18 +49,17 @@
 						       FontAttributes="Bold"
 						       FontSize="30"
 						       LineBreakMode="WordWrap"
-						       Text="Seu cônjuge ou companheiro é seu dependente?"
+						       Text="Fale um pouco sobre as suas despesas"
 						       TextColor="White" />
 
 						<Label VerticalOptions="End"
 						       FontAttributes="None"
 						       LineBreakMode="WordWrap"
-						       Text="Arraste para marcar a sua idade."
+						       Text="Arraste o í­cone para a direita para aumentar e para a esquerda, diminuir."
 						       TextColor="White" />
-
-						<Slider Maximum="99"
-						        Minimum="21"
-						        Value="{Binding Idade}" />
+						<Slider Maximum="5000"
+						        Minimum="99"
+						        Value="{Binding PerfilInv}" />
 					</StackLayout>
 				</StackLayout>
 			</StackLayout>

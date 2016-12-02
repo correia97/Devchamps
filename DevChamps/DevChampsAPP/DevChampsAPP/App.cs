@@ -20,7 +20,11 @@ namespace DevChampsAPP
             Container.RegisterTypeForNavigation<DashboardPage>();
             Container.RegisterTypeForNavigation<QuemVocePage>();
             Container.RegisterTypeForNavigation<ConjugePage>();
+            Container.RegisterTypeForNavigation<AposentadoriaPage>();
             Container.RegisterTypeForNavigation<DependentesPage>();
+            Container.RegisterTypeForNavigation<DespesasPage>();
+            Container.RegisterTypeForNavigation<PerfilInvestidorPage>();
+            Container.RegisterTypeForNavigation<ReservasPage>();
             Container.RegisterTypeForNavigation<NavPage>();
             Container.RegisterTypeForNavigation<ResultadoPage>();
 
