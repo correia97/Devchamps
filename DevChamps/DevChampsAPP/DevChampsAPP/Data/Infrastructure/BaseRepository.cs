@@ -129,5 +129,54 @@ namespace DevChampsAPP
                 App.dbConn.UpdateWithChildren(TEntity);
             }
         }
+
+        public void ConfiguraMenu()
+        {
+            var listaMenus = new List<Menu>();
+
+            var menu1 = new Menu
+            {
+                Ico = "conjuge.png",
+                Descricao = "Conjuge"
+            };
+            listaMenus.Add(menu1);
+
+            var menu2 = new Menu
+            {
+                Ico = "dependentes.png",
+                Descricao = "Depentendes"
+            };
+            listaMenus.Add(menu2);
+
+            var menu3 = new Menu
+            {
+                Ico = "aposentadoria.png",
+                Descricao = "Aposentadoria"
+            };
+            listaMenus.Add(menu3);
+
+            var menu4 = new Menu
+            {
+                Ico = "despesas.png",
+                Descricao = "Despesas"
+            };
+            listaMenus.Add(menu4);
+
+            var menu5 = new Menu
+            {
+                Ico = "perfilinvestidor.png",
+                Descricao = "Perfil Investidor"
+            };
+            listaMenus.Add(menu5);
+
+            var menu6 = new Menu
+            {
+                Ico = "reservas.png",
+                Descricao = "Reservas"
+            };
+            listaMenus.Add(menu6);
+
+            listaMenus.ForEach(m => this.Insert(m as T));
+        }
     }
 }

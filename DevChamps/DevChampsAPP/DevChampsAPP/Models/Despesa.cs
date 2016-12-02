@@ -1,7 +1,7 @@
 ﻿using System;
 namespace DevChampsAPP
 {
-    public class Despesa
+    public class Despesa : EntidadeBase
     {
         public decimal Habitacao { get; set; }
         public decimal Alimentacao { get; set; }

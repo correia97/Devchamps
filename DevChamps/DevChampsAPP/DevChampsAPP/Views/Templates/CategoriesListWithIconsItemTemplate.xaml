@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView x:Class="DevChampsAPP.Views.Templates.CategoriesListWithIconsItemTemplate"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-DevChampsAPP"
+             BackgroundColor="Black">
+
+	<StackLayout HorizontalOptions="FillAndExpand"
+	             VerticalOptions="FillAndExpand"
+	             BackgroundColor="White"
+	             Orientation="Horizontal"
+	             Spacing="20">
+
+		<Grid WidthRequest="80"
+		      HorizontalOptions="Start"
+		      VerticalOptions="FillAndExpand"
+		      BackgroundColor="#33000000">
+
+			<Label HorizontalOptions="Center"
+			       VerticalOptions="Center"
+			       FontSize="40"
+			       Opacity=".2"
+			       Style="{x:Static local:AppConstants.FontIcon}"
+			       Text="{Binding Ico}"
+			       TextColor="White" />
+		</Grid>
+
+		<StackLayout VerticalOptions="Center" Spacing="2">
+			<Label Text="{Binding Nome}" TextColor="White" />
+		</StackLayout>
+
+	</StackLayout>
+</ContentView>
