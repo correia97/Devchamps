@@ -1,68 +1,76 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ContentPage x:Class="DevChampsAPP.Views.PerfilInvestidorPage"
-             xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-             prism:ViewModelLocator.AutowireViewModel="True"
-             BackgroundColor="Black">
+<ContentPage
+    x:Class="DevChampsAPP.Views.PerfilInvestidorPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    BackgroundColor="Black">
 
-	<AbsoluteLayout Padding="0">
-		<!--  MAIN IMAGE  -->
-		<Image x:Name="img"
-		       AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
-		       AbsoluteLayout.LayoutFlags="All"
-		       AnchorY="0"
-		       Aspect="AspectFill"
-		       Opacity=".6"
-		       Source="perfilinvestidor.jpg"
-		       TranslationY="-10" />
+    <AbsoluteLayout Padding="0">
+        <!--  MAIN IMAGE  -->
+        <Image
+            x:Name="img"
+            AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+            AbsoluteLayout.LayoutFlags="All"
+            AnchorY="0"
+            Aspect="AspectFill"
+            Opacity=".6"
+            Source="perfilinvestidorbg.jpg"
+            TranslationY="-10" />
 
-		<Grid AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
-		      AbsoluteLayout.LayoutFlags="All"
-		      RowSpacing="0">
-			<Grid.RowDefinitions>
-				<RowDefinition Height="*" />
-				<RowDefinition Height="40*" />
-			</Grid.RowDefinitions>
+        <Grid
+            AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+            AbsoluteLayout.LayoutFlags="All"
+            RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40*" />
+            </Grid.RowDefinitions>
 
-			<!--  TOP ROW  -->
-			<StackLayout Grid.Row="0"
-			             VerticalOptions="FillAndExpand"
-			             Orientation="Vertical"
-			             Padding="10"
-			             Spacing="0" />
+            <!--  TOP ROW  -->
+            <StackLayout
+                Grid.Row="0"
+                Padding="10"
+                Orientation="Vertical"
+                Spacing="0"
+                VerticalOptions="FillAndExpand" />
 
 
-			<!--  BOTTOM ROW  -->
-			<StackLayout Grid.Row="1"
-			             VerticalOptions="End"
-			             AbsoluteLayout.LayoutBounds="0, 1, 1, 1"
-			             Orientation="Vertical"
-			             Padding="0"
-			             Spacing="0">
+            <!--  BOTTOM ROW  -->
+            <StackLayout
+                Grid.Row="1"
+                Padding="0"
+                AbsoluteLayout.LayoutBounds="0, 1, 1, 1"
+                Orientation="Vertical"
+                Spacing="0"
+                VerticalOptions="End">
 
-				<StackLayout Padding="0" Spacing="0">
+                <StackLayout Padding="0" Spacing="0">
 
-					<StackLayout Padding="20,0,20,20">
-						<!--  HEADERS  -->
-						<Label VerticalOptions="End"
-						       FontAttributes="Bold"
-						       FontSize="30"
-						       LineBreakMode="WordWrap"
-						       Text="Fale um pouco sobre as suas despesas"
-						       TextColor="White" />
+                    <StackLayout Padding="20,0,20,20">
+                        <!--  HEADERS  -->
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="30"
+                            LineBreakMode="WordWrap"
+                            Text="Fale um pouco sobre as suas despesas"
+                            TextColor="White"
+                            VerticalOptions="End" />
 
-						<Label VerticalOptions="End"
-						       FontAttributes="None"
-						       LineBreakMode="WordWrap"
-						       Text="Arraste o í­cone para a direita para aumentar e para a esquerda, diminuir."
-						       TextColor="White" />
-						<Slider Maximum="5000"
-						        Minimum="99"
-						        Value="{Binding PerfilInv}" />
-					</StackLayout>
-				</StackLayout>
-			</StackLayout>
-		</Grid>
-	</AbsoluteLayout>
+                        <Label
+                            FontAttributes="None"
+                            LineBreakMode="WordWrap"
+                            Text="Arraste o í­cone para a direita para aumentar e para a esquerda, diminuir."
+                            TextColor="White"
+                            VerticalOptions="End" />
+                        <Slider
+                            Maximum="5000"
+                            Minimum="99"
+                            Value="{Binding PerfilInv}" />
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </AbsoluteLayout>
 </ContentPage>
